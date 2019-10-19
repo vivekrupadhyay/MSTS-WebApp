@@ -1,0 +1,80 @@
+.contact-wapper {
+    width: 100%;
+    float: left;
+    padding: 45px 0px 45px 0px;
+    overflow: hidden;
+}
+.pd-rgtnone {
+    padding-left: 15px;
+}
+.dis-inlineblock {
+    display: inline-block;
+}
+.pdlftnon {
+    padding-left: 0px;
+}
+.cont-hldr {
+    font-family: 'Arial';
+    font-size: 16px;
+    color: #545454;
+    width: 100%;
+    padding-bottom: 30px;
+}
+.cls-txt-hdr {
+    width: 100%;
+    height: auto;
+    border: solid 0 red;
+    float: left;
+}
+
+.signup-imgdiv {
+    height: 30px;
+    width: 18px;
+    float: right;
+    overflow: hidden;
+}
+.icon-name {
+    background: url(https://dy80itd41p90x.cloudfront.net/images/icon-name.png) no-repeat;
+    margin-top: 20px;
+}
+.clsLeft{
+    float: left;
+}
+.val-div {
+    width: 100%;
+    height: 15px;
+    border: solid 0 #2f3187;
+    margin-top: -10px;
+    float: left;
+    font-size: 12px;
+    color: red;
+}
+.btnsignup {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 13px 0;
+    background: #2f3187;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    font-family: 'Arial';
+    font-size: 14px;
+}
+.conbtn-div {
+    border: solid 0px red;
+    margin: 20px 0px 40px 0px;
+    width: 30%;
+    float: right;
+    position: relative;
+}
+.Rlodershow {
+    display: none;
+    position: absolute;
+    background: url(https://www.centrumforex.com/images/cart-loader.gif) 10px 10px no-repeat;
+    background-position: center;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+}

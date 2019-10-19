@@ -5,7 +5,8 @@ import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { AdminLayoutComponent } from './admin-layout/admin-layout.component';
-import { ImagemanagerComponent } from './Admin/imagemanager/imagemanager.component';
+
+import { BannerComponent } from './banner/banner.component';
 
 
 const routes: Routes = [
@@ -31,20 +32,16 @@ const routes: Routes = [
       title: 'Contact Us'
     }
   },
+  // {
+  //   path: 'banners', component:ImagemanagerComponent
+  // },
 
-  // { path: 'add-role', component: RoleComponent },
-  // { path: 'role-list', component: RoleListComponent },
   {
     path: 'home', component: HomeComponent, data: {
       title: 'Home'
     }
   },
-  {
-    path: 'upload-banners', component:ImagemanagerComponent, data: {
-      title: 'Image Manager'
-    }
-  },
-
+  { path: 'banner',component: BannerComponent },
   {
     path: 'admin-dashboard',
     component: AdminLayoutComponent,

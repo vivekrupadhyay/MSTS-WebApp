@@ -1,0 +1,44 @@
+<ng-container *ngIf="!AdminUser">
+<header>
+    <nav class='navbar navbar-expand-sm navbar-toggleable-sm navbar-light 
+    bg-white border-bottom box-shadow'  #stickyMenu [class.sticky] = "sticky" *ngIf="!AdminUser">
+      <div class="container">
+        <a class="navbar-brand" [routerLink]='["/"]'>My Project</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+          aria-label="Toggle navigation" [attr.aria-expanded]="isExpanded" (click)="toggle()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" [ngClass]='{"show": isExpanded}'>
+          <ul class="navbar-nav flex-grow">
+            <li class="nav-item" [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
+              <a class="nav-link text-dark" [routerLink]='["/"]'>Home</a>
+            </li>
+            <li class="nav-item" [routerLinkActive]='["link-active"]'>
+              <a class="nav-link text-dark" [routerLink]='["/contactus"]'>Contact Us</a>
+            </li>
+            <li class="nav-item" [routerLinkActive]='["link-active"]' *ngIf="!currentUser">
+              <a class="nav-link text-dark" [routerLink]='["/login"]'>login</a>
+            </li>
+            
+            <li class="nav-item" [routerLinkActive]='["link-active"]' *ngIf="currentUser">
+              <a class="nav-link text-dark" (click)="logoutout()">logout</a>
+            </li>
+            
+            <!-- conditional after login -->
+            <!-- <li class="nav-item dropdown" dropdown>
+                  <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                    <mdb-icon fas icon="user"></mdb-icon> Profile<span class="caret"></span></a>
+                  <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">My account</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Log out</a>
+                  </div>
+                </li> -->
+  
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+  </header>
+</ng-container>

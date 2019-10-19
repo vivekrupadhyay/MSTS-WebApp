@@ -1,0 +1,7 @@
+
+  <div [class.hidden]="!(loaderService.isLoading | async)">
+    <div class="loader-overlay">
+      <div *ngIf="loaderService.isLoading | async" class="loader"></div>
+    </div>
+  </div>
+  
